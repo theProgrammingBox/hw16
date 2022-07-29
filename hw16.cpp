@@ -361,5 +361,21 @@ int main()
 // WRITTEN ANSWERS
 
 // Q#1
+/* What kinds of operations must type 
+InputIterator and type EqualityComparible support (i.e. 
+what are the type requirements) such that find is able to 
+work?*/
+// InputIterator needs the post and pre-increment operators, and the dereference operator.
+// EqualityComparible needs the equality and inequality operators.
 
 // Q#5
+/* The copy_if algorithm requires type parameters 
+Input_iterator<In>, Output_iterator<Out>, Predicate<Pred, 
+Value_type<In>> Explain what this means in terms of 
+operations copy_if type parameters must support. What 
+operations must these types have such that copy_if will 
+work?*/
+// copy_if requires the post and pre-increment operators, and the dereference operator.
+// the output iterator must have the same operator requirements as the input iterator.
+// the predicate must overload the equality and inequality operators.
+// the value_type needs comparison operators.
